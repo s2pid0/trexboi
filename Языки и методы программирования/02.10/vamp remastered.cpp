@@ -55,13 +55,6 @@ for ( int x = 1000; x < 10000; x++)
     }
     k++;
   }
-/*for ( int m = 0; m < 10000; m++)
-  {
-    if ( vamp[m] != 0)
-      {
-        cout << vamp[m] << endl;
-      }
-  }*/
 system("pause");
 return(0);
 
