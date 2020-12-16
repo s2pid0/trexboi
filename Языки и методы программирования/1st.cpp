@@ -3,11 +3,8 @@ using namespace std;
 
 int main() {
 
-int x = 0;
-
  for (int i = 0; i < 15; i++) {
-     x = i;
-     switch (x) {
+     switch (i) {
          case 1:
             cout << "Message #1" << endl;
             break;
