@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 
- for (int i = 0; i < 15; i++) {
+ for (int i = 1; i <= 15; i++) {
      switch (i) {
          case 1:
             cout << "Message #1" << endl;
