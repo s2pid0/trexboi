@@ -64,4 +64,5 @@ int main() {
     
     merin.getAllA();
     bbt.getAllB();
+    return(0);
 }
