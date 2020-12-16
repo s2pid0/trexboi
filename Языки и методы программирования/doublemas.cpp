@@ -19,7 +19,7 @@ int main()
     
     switch (var) {
         case 1: {
-            int mas[n][n];    
+            int mas[n][n] = 0;    
             int a{0};
             for ( i = 0; i < n; i++)
                 for ( j = 0; j < n; j++)
@@ -52,7 +52,7 @@ int main()
             break;
         }
         case 2 : {
-            int mas[n][n] = {0};            
+            int mas[n][n] = 0;            
             for ( i = 0; i < n; i++)
                 mas[i][i] = 1; //главная            
             for (i = 0; i < n; i++)
@@ -67,7 +67,7 @@ int main()
             break;
         }
         case 3 : {
-            int mas[n][n];            
+            int mas[n][n] = 0 ;            
             for ( i = 0; i < n; i++)
                 for ( j = 0; j < n; j++) {
                     if ( i == j | i+j == n-1)
@@ -87,7 +87,7 @@ int main()
             break;
         }
         case 4 : {
-            int mas[n][n] = {0};            
+            int mas[n][n] = 0;            
             for ( i = 0; i < n; i++)
                 mas[i][n - 1 - i] = 1; //побочная           
             for (i = 0; i < n; i++)
