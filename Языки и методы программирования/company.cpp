@@ -1,4 +1,5 @@
 #include <iostream>
+#include <Windows.h>
 using namespace std;
 
 class Store {
@@ -53,7 +54,8 @@ class Boat: protected Store {
 
 int main() {
 
-    setlocale(LC_ALL, "Russian");
+	SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);
     
     Auto merin;
     Boat bbt;
