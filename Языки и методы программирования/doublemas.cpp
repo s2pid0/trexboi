@@ -1,17 +1,18 @@
+
 #include <Windows.h>
 #include <iostream>
 using namespace std;
 
 int main()
-    SetConsoleCP(1251);
-SetConsoleOutputCP(1251);
-    
+
 {
+    SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);
     int n,i,j,var;
     bool stop = true;
     cout << "Размерность массива\n";
-    cin >> n;
-    
+    n = 5;
+    cout << n << endl;
     do {
     cout <<"Выберите вариант заполнения: \n1) Змейкой\n2) По главной диагонали\n3) Исключая главную и побочную\n4) По побочной диагонали\n\nВведите 0 для остановки программы\n";
 
@@ -22,7 +23,7 @@ SetConsoleOutputCP(1251);
     
     switch (var) {
         case 1: {
-            int mas[n][n] = 0;    
+            int mas[n][n] = {0};    
             int a{0};
             for ( i = 0; i < n; i++)
                 for ( j = 0; j < n; j++)
@@ -55,7 +56,7 @@ SetConsoleOutputCP(1251);
             break;
         }
         case 2 : {
-            int mas[n][n] = 0;            
+            int mas[n][n] = {0};            
             for ( i = 0; i < n; i++)
                 mas[i][i] = 1; //главная            
             for (i = 0; i < n; i++)
@@ -70,7 +71,7 @@ SetConsoleOutputCP(1251);
             break;
         }
         case 3 : {
-            int mas[n][n] = 0 ;            
+            int mas[n][n] = {0} ;            
             for ( i = 0; i < n; i++)
                 for ( j = 0; j < n; j++) {
                     if ( i == j | i+j == n-1)
@@ -90,7 +91,7 @@ SetConsoleOutputCP(1251);
             break;
         }
         case 4 : {
-            int mas[n][n] = 0;            
+            int mas[n][n] = {0};            
             for ( i = 0; i < n; i++)
                 mas[i][n - 1 - i] = 1; //побочная           
             for (i = 0; i < n; i++)
@@ -117,3 +118,4 @@ SetConsoleOutputCP(1251);
 
     return 0;
 }
+
